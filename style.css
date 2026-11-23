@@ -12,10 +12,14 @@ button{font:inherit;color:inherit;cursor:pointer}
 .on-scene #scene{display:flex}.on-scene #page{display:none}
 #scene h1{font-size:clamp(2.2rem,7vw,4rem);line-height:1.02;margin:0 0 6px;font-weight:800;letter-spacing:-.02em}
 #scene .tag{margin:0 0 18px;color:#aab6c7;max-width:44ch}
-svg.cam{width:min(94vw,640px);height:auto;overflow:visible;filter:drop-shadow(0 30px 30px rgba(0,0,0,.45))}
+svg.cam{width:min(94vw,760px);height:auto;overflow:visible;filter:drop-shadow(0 30px 30px rgba(0,0,0,.45))}
 .lcdt{font-family:"DM Mono",monospace;font-size:11px;fill:#7fe3b5}
+.dial{filter:drop-shadow(0 4px 5px rgba(0,0,0,.28))}
 #dr{transition:transform .45s cubic-bezier(.3,1.4,.5,1)}
-#shut{cursor:pointer}#shut .cap{transition:transform .08s}#shut:active .cap{transform:translateY(3px)}
+#shut{cursor:pointer;filter:drop-shadow(0 5px 7px rgba(0,0,0,.38));outline:none}
+#shut .cap{transition:transform .08s}#shut:active .cap{transform:translateY(3px)}
+#shut:focus-visible circle:first-child{stroke:#79b8ff;stroke-width:4}
+.lens-badge{filter:drop-shadow(0 4px 5px rgba(0,0,0,.22))}
 #iris{transform-origin:300px 245px;transform:scale(0);opacity:0}
 .snap #iris{animation:iris .42s ease-in-out}
 @keyframes iris{0%{transform:scale(0);opacity:1}50%{transform:scale(1.12);opacity:1}100%{transform:scale(1.12);opacity:1}}
